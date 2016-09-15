@@ -117,11 +117,14 @@ for (var i = 0; i < radar_data.length; i++) {
   var itemsByStage = _.groupBy(radar_data[i].items, function(item) { return Math.floor(item.pc.r / 100) });
   var offsetIndex = 0;
   var midIndex = -1;
+  var previous = undefined;
 
-  for (var stageIndex in _(itemsByStage).keys()) {
-    if (stageIndex > 0) {
-      offsetIndex = offsetIndex + itemsByStage[stageIndex-1].length + 1; 
+  Object.keys(itemsByStage).forEach(function(stageIndex) {
+    if (stageIndex > 0 && previous !== undefined) {
+      offsetIndex = offsetIndex + itemsByStage[previous].length + 1; 
     }
+    previous = stageIndex;
+    
     if ((stageIndex > 1) && (midIndex < 0)) {
       midIndex = offsetIndex;
     }
@@ -180,7 +183,7 @@ for (var i = 0; i < radar_data.length; i++) {
         .text(function(d) {return total_index++;}) 
         .textBaseline("middle")
         .textStyle("white");            
-    }
+    })
   }      
        
   radar.anchor('radar');
