@@ -440,6 +440,70 @@ var radar_data = [
     "color" : "#587486",
     "items" : [
   {
+    "name": "JIRA / Confluence",
+    "pc": {
+      "r": 43,
+      "t": 70
+    },
+    "movement": "t"
+  },
+  {
+    "name": "Oracle",
+    "pc": {
+      "r": 51,
+      "t": 25
+    },
+    "movement": "t"
+  },
+  {
+    "name": "Solr",
+    "pc": {
+      "r": 61,
+      "t": 10
+    },
+    "movement": "c"
+  },
+  {
+    "name": "ElasticSearch",
+    "pc": {
+      "r": 32,
+      "t": 55
+    },
+    "movement": "t"
+  },
+  {
+    "name": "Splunk",
+    "pc": {
+      "r": 31,
+      "t": 40
+    },
+    "movement": "t"
+  },
+  {
+    "name": "MongoDB",
+    "pc": {
+      "r": 79,
+      "t": 62
+    },
+    "movement": "t"
+  },
+  {
+    "name": "PostgreSQL",
+    "pc": {
+      "r": 89,
+      "t": 47
+    },
+    "movement": "c"
+  },
+  {
+    "name": "Graphite",
+    "pc": {
+      "r": 39,
+      "t": 32
+    },
+    "movement": "t"
+  },
+  {
     "name": "Kafka",
     "pc": {
       "r": 234,
