@@ -524,7 +524,7 @@ var radar_data = [
   {   
     "quadrant": "Platforms & Infrastructure",
     "left" :45,
-    "top" : (h/2 + 38),
+    "top" : (h/2 + 160),
     "color" : "#DC6F1D",
     "items" : [
   {
